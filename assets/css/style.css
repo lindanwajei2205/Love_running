@@ -137,10 +137,28 @@ main{
 }
 
 #benefits hr{
-    
+
     border: 1px solid #3a3a3a;
     margin: 5px 0;
 }
+
+/* reasons image */
+#circle-cover-bg{
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    background: url("../images/reasons-image.webp") no-repeat top center / cover;
+    /* make square image into a circle */
+    border-radius: 50%;
+    max-height: 300px;
+    max-width: 300px;
+
+}
+ #benefits-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 
 
 /* footer */
