@@ -160,7 +160,31 @@ main{
     justify-content: center;
  }
 
+/* meet up section */
+#times{
+    background:url("../images/dublin-city.webp") no-repeat center/cover;
+    /* handles responsivity without need for media query */
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#times div{
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide 
+    Each div will expand to show the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* creating grid over background image behind */
+    border: 2px solid white;
+}
+
+#times h3{
+    /* overrides the heading color set in general */
+    color: #fafafa;
+}
 /* footer */
 #social-networks{
     text-align: center;
