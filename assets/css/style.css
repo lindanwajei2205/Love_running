@@ -213,6 +213,15 @@ main{
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px){
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+    
+}
 /* media query:tablets and larger (768px and up)*/
 @media screen and (min-width: 768px){
     /* Header */
@@ -246,8 +255,6 @@ main{
         /* push main content down to accommodate larger header */
         margin-top: 79px;
     }
-}
-
 /* Hero */
 #cover-text{
     width: 300px;
@@ -270,11 +277,21 @@ main{
     text-align: end;
     align-self: flex-end;
 }
+/* gallery */
+#photos{
+    column-count: 3;
+}
+}
 
-/* larger screem media query (992px and higher) */
+
+/* large devices  media query (laptops and and desktops 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos{
+        column-count: 4;
     }
 }
 /* larger screen media query (1200px and wider) */
